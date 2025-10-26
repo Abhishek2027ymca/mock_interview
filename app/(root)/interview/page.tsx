@@ -1,5 +1,6 @@
 import Agent from "@/components/Agent";
 import { getCurrentUser } from "@/lib/actions/auth.action";
+import React from 'react'
 
 const Page = async () => {
   const user = await getCurrentUser();
@@ -11,7 +12,9 @@ const Page = async () => {
       <Agent
         userName={user?.name!}
         userId={user?.id}
-        profileImage={user?.profileURL}
+        //! you have done here a chnage ?? dont know why 
+        
+        // profileImage={user?.profileURL}
         type="generate"
       />
     </>

@@ -12,6 +12,7 @@ import {
 
 async function Home() {
   const user = await getCurrentUser();
+// here we are use parallel actioning 
 
   const [userInterviews, allInterview] = await Promise.all([
     getInterviewsByUserId(user?.id!),
