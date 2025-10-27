@@ -38,7 +38,7 @@ export async function POST(request: Request) {
 });
 
     // Wait for the response
-    const response = await result.response;
+    const response = result.response;
     const questions = response.text();
 
     const interview = {
